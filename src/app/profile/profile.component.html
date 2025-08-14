@@ -1,5 +1,17 @@
-<div class="container mt-5 text-center">
-  <h1>Profile Page</h1>
-  <img src="https://placehold.co/400" alt="Profile Picture" class="img-thumbnail mt-3">
-</div>
+<div *ngIf="currentUser">
+  <form (ngSubmit)="saveProfile()">
+    <label>Username:</label>
+    <input type="text" [(ngModel)]="currentUser.username" name="username" />
 
+    <label>Birthdate:</label>
+    <input type="date" [(ngModel)]="currentUser.birthdate" name="birthdate" />
+
+    <label>Age:</label>
+    <input type="number" [(ngModel)]="currentUser.age" name="age" />
+
+    <label>Email:</label>
+    <input type="email" [(ngModel)]="currentUser.email" name="email" />
+
+    <button type="submit">Save Profile</button>
+  </form>
+</div>

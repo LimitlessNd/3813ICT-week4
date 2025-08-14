@@ -1,0 +1,13 @@
+.home-container {
+  margin-top: 80px;
+}
+
+.home-buttons .btn {
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.home-buttons .mr-2 {
+  margin-right: 10px;
+}

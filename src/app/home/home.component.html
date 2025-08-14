@@ -1,1 +1,10 @@
+<div class="home-container text-center">
+  <h1>Welcome to Week 4 Project</h1>
+  <p class="lead">Manage your profile and explore the app.</p>
+
+  <div class="home-buttons mt-4">
+    <a routerLink="/login" class="btn btn-primary mr-2" *ngIf="!isLoggedIn()">Login</a>
+    <a routerLink="/account" class="btn btn-success" *ngIf="isLoggedIn()">Go to Account</a>
+  </div>
+</div>
 
