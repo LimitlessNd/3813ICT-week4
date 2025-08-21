@@ -20,6 +20,6 @@ export class AppComponent {
   }
 
   isLoggedIn(): boolean {
-    return !!localStorage.getItem('currentUser');  // true if user exists
+    return !!localStorage.getItem('currentUser');  
   }
 }
